@@ -1,23 +1,21 @@
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
 import Navbar from "./Navbar";
+import ToggleButton from "./ToggleButton"; // 🔹 en mayúscula
+import Ifts from "./Ifts";
 
-const Layout = () => {
-    return (
-        /* div
-                header
-                    button
-                hr
-                navbar
-                    ul
-                        li
-                            link
-            div
-        */
-        <div class="open">
-            <hr />
-            <Navbar state="open"></Navbar>
-        </div>
-    );
+export default function Sidebar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleToggle = () => setIsOpen(!isOpen);
+
+  return (
+    <div className={`sidebar ${isOpen ? "open" : ""}`}>
+        <header className="ifts-header">
+            <Ifts/>
+            <ToggleButton isOpen={isOpen} onToggle={handleToggle} />
+        </header>
+        <hr style={{width: "100%"}}/>
+        <Navbar isOpen={isOpen} />
+    </div>
+  );
 }
-
-export default Layout;
