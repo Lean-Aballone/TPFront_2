@@ -1,0 +1,29 @@
+import { Routes, Route } from 'react-router-dom'
+import Layout from './pages/Layout'
+import Lean from './pages/Lean';
+import Bitacora from './pages/Bitacora';
+import Erika from './pages/Erika';
+import Gonza from './pages/Gonza';
+import Mariano from './pages/Mariano';
+import Home from './pages/Home';
+import './App.css'
+
+function App() {
+  return (
+    <div>
+      <Routes>
+        <Route path="/" element={<Layout />} >
+          <Route path="/" element={<Home />} />
+          <Route path="/bitacora" element={<Bitacora/>}/>
+          <Route path="/lean" element={<Lean />} />
+          <Route path="/erika" element={<Erika />} />
+          <Route path="/gonza" element={<Gonza />} />
+          <Route path="/mariano" element={<Mariano />} />
+          <Route path="*" element={<Home />} />
+        </Route>
+      </Routes>
+    </div>
+  );
+};
+
+export default App;
