@@ -15,12 +15,12 @@ export default function Navbar({ isOpen }) {
             </nav>
             <nav className={`nav nav-ul ${!isOpen ? "nav_open" : "hidden"}`}>
                 <ul>
-                    <li><NavLink to="/"><span className="card-avatar">P</span></NavLink></li>
-                    <li><NavLink to="/bitacora"><span className="card-avatar">B</span></NavLink></li>
-                    <li><NavLink to="/erika"><span className="card-avatar">E</span></NavLink></li>
-                    <li><NavLink to="/gonza"><span className="card-avatar">G</span></NavLink></li>
-                    <li><NavLink to="/mariano"><span className="card-avatar">M</span></NavLink></li>
-                    <li><NavLink to="/lean"><span className="card-avatar">L</span></NavLink></li>
+                    <li><NavLink to="/" title="Portada"><span className="card-avatar">P</span></NavLink></li>
+                    <li><NavLink to="/bitacora" title="Bitácora"><span className="card-avatar">B</span></NavLink></li>
+                    <li><NavLink to="/erika" title="Erika"><span className="card-avatar">E</span></NavLink></li>
+                    <li><NavLink to="/gonza" title="Gonza"><span className="card-avatar">G</span></NavLink></li>
+                    <li><NavLink to="/mariano" title="Mariano"><span className="card-avatar">M</span></NavLink></li>
+                    <li><NavLink to="/lean" title="Lean"><span className="card-avatar">L</span></NavLink></li>
                 </ul>
             </nav>
             <style>
