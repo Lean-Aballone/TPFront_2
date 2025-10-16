@@ -7,7 +7,7 @@ export default function Card({img,nombre,frase}) {
                 <article>
                     <hr />
                     <h3>{nombre}</h3>
-                    <p>{frase}</p>
+                    <p className="showOnHover">{frase}</p>
                 </article>
             </Link>
             <style>
