@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 export default function Card({img,nombre,frase}) {
     return (
-        <div className="cardContainer">
+        <div className="cardContainer" tabIndex={0}>
             <Link to={nombre}>
                 <img src={img} alt={nombre} style={{width: "200px", height: "300px", display:"block",objectFit:"cover"}}/>
                 <article>

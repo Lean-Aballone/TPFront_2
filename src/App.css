@@ -162,6 +162,10 @@ body {
     opacity: 0;
     transition: opacity 1.5s linear;
   }
+  .cardContainer > a:focus-visible .showOnHover,
+  .cardContainer article:focus-visible,
+  .cardContainer:focus .showOnHover,
+  .cardContainer:focus-visible .showOnHover,
   .cardContainer:hover .showOnHover{
     opacity: 1;
     transition: opacity 1.5s linear;
