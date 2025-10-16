@@ -5,7 +5,7 @@ export default function Welcome({titulo,subtitulo, grupo, bienvenida}) {
                 <h1>{titulo}</h1>
                 <h3>{subtitulo}</h3>
                 <p>{grupo}</p>
-                <p>{bienvenida}</p>
+                <p className="fraseBienvenida">{bienvenida}</p>
             </article>
         </section>
     );
