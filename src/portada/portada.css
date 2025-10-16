@@ -1,0 +1,113 @@
+.container {
+	max-width: 1200px;
+}
+
+.section {
+    margin: 1rem 1rem 0 1rem;
+	background: #fff;
+	color: #111;
+	padding: 1rem 0.3rem;
+	padding-bottom: 0;
+    min-width: 0;
+}
+
+.cardSection > p {
+    align-self: flex-start;
+	padding-top: 20px;
+	color: white;
+	font-weight: 500;
+}
+
+.cardSection {
+    min-width: 0;
+    max-width: 100%; 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+	background: var(--footer-gradient);
+	border-radius: 25px 25px 0 0;
+}
+
+
+h1 {
+  margin-block: 0.67em;
+  font-size: 2em;
+}
+
+.welcome{
+    max-width: 100%; 
+    padding: 0;
+}
+
+.welcome > article {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 0;
+}
+.cardSection .cardContainer p{
+    text-decoration: none;
+	color: #111827;
+	padding: 0 1rem;
+}
+
+.cardSection .cardContainer  h3 {
+    text-decoration: none;
+    color: #111827;
+	padding: 0 1rem;
+	margin: .5rem 0;
+	font-size: 1.25rem;
+	font-weight: 700;
+}
+
+h1, p {
+  overflow-wrap: break-word;
+}
+
+
+.welcome, .container {
+  flex: 1;
+  min-width: 0; 
+}
+
+section.info {
+	background-color: var(--bg-main);
+	background-image: url("../assets/img/cropped-Designer.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: local;
+	background-attachment: scroll;
+	background-position: 0% 83%;
+	animation: 50s linear infinite bg-img;
+}
+
+@keyframes bg-img {
+
+  0% {
+    background-image: url("../assets/img/cropped-Designer.jpeg");
+    animation-timing-function: step-end;
+  }
+
+  25%,
+  75% {
+    background-image: url("../assets/img/pexels-bibekghosh-14553705.jpg");
+    animation-timing-function: step-start;
+  }
+
+  100% {
+    background-image: url("../assets/img/pexels-markusspiske-2764993.jpg");
+    animation-timing-function: step-start;
+  }
+}
