@@ -1,34 +1,30 @@
-.container {
-	max-width: 1200px;
-}
 
 .section {
-    margin: 1rem 1rem 0 1rem;
 	background: #fff;
 	color: #111;
 	padding: 1rem 0.3rem;
 	padding-bottom: 0;
-    min-width: 0;
+  min-width: 0;
 }
 
 .cardSection > p {
-    align-self: flex-start;
+  align-self: flex-start;
 	padding-top: 20px;
 	color: white;
 	font-weight: 500;
 }
 
 .cardSection {
-    min-width: 0;
-    max-width: 100%; 
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem;
+  min-width: 0;
+  max-width: 100%; 
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
 	background: var(--footer-gradient);
-	border-radius: 25px 25px 0 0;
+  border-radius: 25px 25px 0 0;
 }
 
 
@@ -38,34 +34,47 @@ h1 {
 }
 
 .welcome{
-    max-width: 100%; 
-    padding: 0;
+  flex-grow: 10;
+  width: 100%;
+  max-width: 100%; 
+  padding: 0;
 }
 
 .welcome > article {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 1rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 1rem;
+  text-align: right;
+  max-width: 100%;
+  transition: background-color 5s linear; 
+}
+
+.welcome > article .fraseBienvenida {
+	max-width: 45ch;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	white-space: normal;
+	flex-shrink: 1;
+	align-self: flex-end;
 }
 
 .flex {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    min-width: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-width: 0;
 }
 .cardSection .cardContainer p{
-    text-decoration: none;
+  text-decoration: none;
 	color: #111827;
 	padding: 0 1rem;
 }
 
 .cardSection .cardContainer  h3 {
-    text-decoration: none;
-    color: #111827;
+  text-decoration: none;
+  color: #111827;
 	padding: 0 1rem;
 	margin: .5rem 0;
 	font-size: 1.25rem;
@@ -75,7 +84,6 @@ h1 {
 h1, p {
   overflow-wrap: break-word;
 }
-
 
 .welcome, .container {
   flex: 1;
@@ -110,4 +118,13 @@ section.info {
     background-image: url("../assets/img/pexels-markusspiske-2764993.jpg");
     animation-timing-function: step-start;
   }
+}
+
+.flexContainer {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  flex-flow: row wrap;
+  min-width: 0;
+  justify-content: center;
 }
