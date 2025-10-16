@@ -109,3 +109,81 @@ body {
   margin-left: 0;
 	border-radius: 0 14px 14px 0;
 }
+
+#Layout-container > .flex{
+  width: 100%;
+}
+
+.nav a:hover {
+  background: rgba(255, 255, 255, .08);
+}
+.nav2:hover {
+  box-shadow: 0 0 15px 5px var(--accent);
+}
+.nav2:hover > div {
+  box-shadow: 0 0 15px 1px var(--accent);
+}
+
+.sidebar, .nav{
+  transition: all .5s linear;
+}
+
+.welcome.info > article {
+  animation: 8s linear bg-opacity forwards;
+}
+
+@keyframes bg-opacity{
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  70%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  100% {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media (min-width:900px){
+  .welcome.info > article {
+    padding-right: 5rem;
+  }
+  section.container.section.flex > p, h2,
+  .cardSection > p:nth-child(1){
+    padding-left: 3rem;
+  }
+
+  .showOnHover{
+    opacity: 0;
+    transition: opacity 1.5s linear;
+  }
+  .cardContainer:hover .showOnHover{
+    opacity: 1;
+    transition: opacity 1.5s linear;
+  }
+
+  .cardContainer:hover,
+  .cardContainer:focus-visible,
+  .cardContainer:focus{
+    transform: translateY(5px);
+    box-shadow: 0 0px 15px 5px rgba(245, 0, 200, 0.671);
+  }
+
+  #sectionBitacora{
+    padding-left: 2.7rem;
+  }
+}
+
+@media (min-width:1200px){
+  #sectionBitacora > article p{
+    max-width: 60%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+}
