@@ -6,7 +6,7 @@ import reunionesData from '../Bitacora/reuniones.json'
 const Bitacora = () => {
     return (
         <main id="app" className="page-content bitacoraBackground">
-            <section className="container section bitacoraStyle">
+            <section className="containerBitacora sectionBitacora bitacoraStyle">
                 <h2>
                     Bitácora
                 </h2>
