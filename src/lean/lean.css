@@ -1,0 +1,14 @@
+main.bg-img {
+	padding: 1rem;
+	background-color: var(--bg-main);
+	background-repeat: no-repeat;
+	margin: 0;
+	background-size: cover;
+	background-attachment: local;
+	background-attachment: scroll;
+	background-position: 25% 83%;
+}
+
+main.bg-img-lean {
+	background-image: url("../assets/img/lean_bg.jpg");
+}
