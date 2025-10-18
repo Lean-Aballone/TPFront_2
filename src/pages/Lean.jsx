@@ -1,11 +1,20 @@
 import Footer from "../components/Footer";
 import Img from "../components/Img";
 import Info from "../lean/Info"
+import About from "../lean/About";
+import Card from "../lean/Card";
+import habilidadesData from "../lean/habilidades.json"
+import Musica from "../lean/Musica";
+import Peliculas from "../lean/Peliculas";
+import "../lean/lean.css"
+
+
+
 
 const Lean = () => {
     return (
         <>
-            <main>
+            <main className="bg-img bg-img-lean">
                 <Img src={"src/assets/img/carlina.png"} alt={"Lean"}/>
                 <Info 
                     nombre={"Leandro Ezequiel Aballone"}
@@ -14,6 +23,45 @@ const Lean = () => {
                     edad={26}
                     mascota={"Carlina"}
                 />
+                <section>
+                    <About title={"Habilidades:"}>
+                        {habilidadesData.map(habilidad => (
+                            <Card 
+                                key={habilidad.id} 
+                                title={habilidad.titulo} 
+                                info={habilidad.info}
+                            />
+                        ))}
+                    </About>    
+                    <About title={"Música favorita:"} msg={" Podés escuchar haciendo click sobre el nombre de la banda "}>
+                        <Musica id={"linkin-park"} name={"Linkin park"}/>
+                        <Musica id={"ghost-bc"} name={"Ghost B.C."}/>
+                        <Musica id={"coldplay"} name={"Coldplay"}/>
+                    </About> 
+                    <About title={"Películas favoritas:"}>
+                        <Peliculas 
+                            name={"Matrix"}
+                            img={"https://pics.filmaffinity.com/the_matrix-155050517-mmed.jpg"}
+                            link1={"https://www.filmaffinity.com/es/film932476.html"}
+                            link2={"https://es.wikipedia.org/wiki/Matrix"}
+                            info={"La película plantea que en el futuro, tras una dura guerra, casi todos los seres humanos han sido esclavizados por las máquinas y las inteligencias artificiales creadas. Estas los tienen en suspensión y con sus mentes conectadas a una realidad virtual llamada \"Matrix\" que representa el final del siglo XX. Los seres humanos son usados por las máquinas para obtener energía y los pocos que no están suspendidos, o que han sido liberados, viven en la ciudad Zion y tienen naves que se mueven por el subsuelo, entrando de forma clandestina a la Matrix para liberar otros conectados. "}
+                        />
+                        <Peliculas
+                            name={"Rocky"}
+                            img={"https://pics.filmaffinity.com/rocky-253483905-mmed.jpg"}
+                            link1={"https://www.filmaffinity.com/es/film192554.html"}
+                            link2={"https://es.wikipedia.org/wiki/Rocky_(pel%C3%ADcula)"}
+                            info={"En 1975, Rocky Balboa es un boxeador amateur de treinta años de cuarta categoría que vive en un pequeño apartamento al sureste de Filadelfia, Pensilvania . Su carrera en el ring no parece que vaya a durar mucho tiempo. Se gana la vida como cobrador recaudando deudas para un usurero llamado Tony Gazzo, pero este no cree que Rocky tenga la suficiente malicia para dar una paliza a un moroso cuando sea necesario. Rocky aún se entrena de vez en cuando para no perder la forma, y el que fuera su entrenador, un excampeón de los pesos gallos en la década de los años 1920, Mickey Goldmill, cree que Rocky podría llegar a lo más alto, pero solo si tuviera la voluntad suficiente y se dedicara en cuerpo y alma al boxeo. "}
+                        />
+                        <Peliculas
+                            name={"Volver al futuro"}
+                            img={"https://pics.filmaffinity.com/back_to_the_future-100822308-mmed.jpg"}
+                            link1={"https://www.filmaffinity.com/es/film309023.html"}
+                            link2={"https://es.wikipedia.org/wiki/Back_to_the_Future"}
+                            info={"El adolescente Marty McFly es amigo de Doc, un científico al que todos toman por loco. Cuando Doc crea una máquina para viajar en el tiempo, un error fortuito hace que Marty llegue a 1955, año en el que sus futuros padres aún no se habían conocido. Después de impedir su primer encuentro, deberá conseguir que se conozcan y se casen; de lo contrario, su existencia no sería posible."}
+                        />
+                    </About>     
+                </section>
                 <Footer/>
             </main>
         </>
