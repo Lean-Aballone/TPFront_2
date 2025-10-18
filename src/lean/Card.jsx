@@ -1,6 +1,6 @@
-export default function Card ({title, info}){
+export default function Card ({title, info, className}){
     return (
-        <article>
+        <article className={className}>
             <h4>{title}</h4>
             <p>{info}</p>
         </article>
