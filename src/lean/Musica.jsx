@@ -44,6 +44,11 @@ export default function Musica({ id, name, className, src }) {
         };
     }, [src]); // si cambia la src, re-attach listeners al nuevo elemento
 
+    const handleKeyPress = (event) => {
+        if (event.key === "Enter" || event.key === " "){
+            handleClick();
+        }
+    };
     const handleClick = () => {
         const a = audioRef.current;
         if (!a) return;
@@ -67,10 +72,12 @@ export default function Musica({ id, name, className, src }) {
 
     return (
         <p
+            tabIndex={0}
             id={id}
             className={`${className || ""} playable-song cursor-pointer select-none ${isPlaying ? "playing" : ""}`}
             title={isPlaying ? "Click para detener" : "Click para escuchar una canción"}
             onClick={handleClick}
+            onKeyDown={handleKeyPress}
             style={{ cursor: "pointer" }}
         >
             {name}{" "}

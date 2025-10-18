@@ -76,6 +76,7 @@ p.playable-song {
 	cursor: pointer;
 }
 
+p.playable-song:focus,
 p.playable-song:hover{
 	outline: thick double rgba(6, 29, 128, 0.6);
 	text-decoration: underline;
