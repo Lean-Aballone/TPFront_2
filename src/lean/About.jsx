@@ -2,7 +2,7 @@ export default function About ({title, msg, children, className}) {
     return (
         <article className={className}>
             <h3>{title}</h3>
-            <small>{msg}</small>
+            <small className="bye">{msg}</small>
             {children}
         </article>
     );
