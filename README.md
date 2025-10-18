@@ -1,16 +1,86 @@
-# React + Vite
+# Trabajo Práctico Grupal 2
+### Desarrollo de sistemas web (front End)
+### Instituto de Formación Técnica Superior N° 29
+---
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Estructura del proyecto: 
+<details>
+  <summary>Click para expandir/colapsar estructura</summary>
+  
+    .
+    ├── App.css
+    ├── App.jsx
+    ├── assets
+    │   └── img
+    │       ├── carlina.png
+    │       ├── chikis.jpg
+    │       ├── cropped-Designer.jpeg
+    │       ├── gonzalo-profile.jpg
+    │       ├── kity.jpeg
+    │       ├── lean_bg.jpg
+    │       ├── logo_ba__buenos_aires_ciudad.png
+    │       ├── pexels-bibekghosh-14553705.jpg
+    │       ├── pexels-markusspiske-2764993.jpg
+    │       └── test.jpg
+    ├── Bitacora
+    │   ├── Article.jsx
+    │   ├── bitacora.css
+    │   └── reuniones.json
+    ├── components
+    │   ├── Footer.jsx
+    │   ├── Ifts.jsx
+    │   ├── Img.jsx
+    │   ├── Navbar.jsx
+    │   ├── Sidebar.jsx
+    │   └── ToggleButton.jsx
+    ├── index.css
+    ├── lean
+    │   ├── About.jsx
+    │   ├── Card.jsx
+    │   ├── habilidades.json
+    │   ├── Info.jsx
+    │   ├── lean.css
+    │   ├── Musica.jsx
+    │   ├── Peliculas.jsx
+    │   └── resources
+    │       └── songs
+    │           ├── coldplay.webm
+    │           ├── ghost.webm
+    │           └── linkinpark.webm
+    ├── main.jsx
+    ├── pages
+    │   ├── Bitacora.jsx
+    │   ├── Erika.jsx
+    │   ├── Gonza.jsx
+    │   ├── Home.jsx
+    │   ├── Layout.jsx
+    │   ├── Lean.jsx
+    │   └── Mariano.jsx
+    └── portada
+        ├── Card.jsx
+        ├── Integrantes.jsx
+        ├── portada.css
+        └── Welcome.jsx
+    
+</details>
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Flujo de componentes: 
 
-## React Compiler
+<details>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+<summary>Click para expandir/colapsar flujo</summary>
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+  
+</details>
+
+---
+
+## Integrantes Grupo 14:
+
+* Leandro Ezequiel Aballone
+* Erika Johana Cruz Vallejo
+* Mariano Fabian Gonzalez
+* Gonzalo Villafañe
