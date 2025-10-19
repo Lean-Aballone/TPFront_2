@@ -23,10 +23,28 @@
     "fecha": "Día 18/09/2025",
     "info": "En la última reunión del equipo se revisaron los avances logrados hasta el momento y se definieron las tareas pendientes para la entrega final."
   },
-  {
+    {
     "id": 5,
     "titulo": "Reunión 5",
     "fecha": "Día 08/10/2025",
-    "info": " "
+    "info": "Se revisaron detalles de diseño y funcionamiento de las tarjetas personales, y se ajustaron estilos para distintos dispositivos."
+  },
+  {
+    "id": 6,
+    "titulo": "Reunión 6",
+    "fecha": "Día 12/10/2025",
+    "info": "Se comenzó la refactorización del proyecto a React, como lo exige la consigna. Se creó la estructura base y se configuró el entorno."
+  },
+  {
+    "id": 7,
+    "titulo": "Reunión 7",
+    "fecha": "Día 16/10/2025",
+    "info": "Se avanzó con la división en componentes. Se implementaron rutas para cada página y se reutilizaron los estilos existentes."
+  },
+  {
+    "id": 8,
+    "titulo": "Reunión 8",
+    "fecha": "Día 19/10/2025",
+    "info": "Se realizaron pruebas generales, se corrigieron errores menores y se ajustaron los estilos en los nuevos componentes en React."
   }
 ]
