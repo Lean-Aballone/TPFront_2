@@ -14,6 +14,7 @@ export default function Navbar({ isOpen }) {
                     <li><NavLink to="/peliculas">Peliculas</NavLink></li>
                     <li><NavLink to="/diagrama">Diagrama</NavLink></li>
                     <li><NavLink to="/clima">Clima</NavLink></li>
+                    <li><NavLink to="/noticias">Noticias</NavLink></li>
                 </ul>
             </nav>
             <nav className={`nav nav-ul ${!isOpen ? "nav_open" : "hidden"}`}>
@@ -27,6 +28,7 @@ export default function Navbar({ isOpen }) {
                     <li><NavLink to="/peliculas" title="Peliculas"><span className="card-avatar">P</span></NavLink></li>
                     <li><NavLink to="/diagrama" title="Diagrama"><span className="card-avatar">D</span></NavLink></li>
                     <li><NavLink to="/clima" title="Clima"><span className="card-avatar">C</span></NavLink></li>
+                    <li><NavLink to="/noticias" title="Noticias"><span className="card-avatar">N</span></NavLink></li>
                 </ul>
             </nav>
             <style>
