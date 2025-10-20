@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "./Navbar";
-import ToggleButton from "./ToggleButton"; // 🔹 en mayúscula
+import ToggleButton from "./ToggleButton";
 import Ifts from "./Ifts";
 
 export default function Sidebar() {

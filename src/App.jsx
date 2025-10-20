@@ -7,6 +7,7 @@ import Gonza from './pages/Gonza';
 import Mariano from './pages/Mariano';
 import Home from './pages/Home';
 import Peliculas from './pages/Peliculas.jsx';
+import Diagrama from './pages/Diagrama.jsx';
 import './App.css'
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/gonza" element={<Gonza />} />
           <Route path="/mariano" element={<Mariano />} />
           <Route path="/peliculas" element={<Peliculas />} />
+          <Route path="/diagrama" element={<Diagrama />} />
           <Route path="*" element={<Home />} />
         </Route>
       </Routes>

@@ -14,7 +14,7 @@ export default function App() {
   }, []);
 
   return (
-    <>
+    <div style={{width:"100%", backgroundColor:"#0f0f0f"}}>
         <div className="app">
         <h1 className="white-bg sideMargin">Listado de Películas:</h1>
         <div className="grid white-bg sideMargin">
@@ -24,6 +24,6 @@ export default function App() {
         </div>
         <Footer />
         </div>
-    </>
+    </div>
   );
 }
