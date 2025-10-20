@@ -1,4 +1,8 @@
 import Card from "./Card";
+import ErikaImg from "../assets/img/chikis.jpg"
+import GonzaImg from "../assets/img/gonzalo-profile.jpg"
+import MarianoImg from "../assets/img/kity.jpeg"
+import LeanImg from "../assets/img/carlina.png"
 
 const Integrantes = () => {
     return (
@@ -8,10 +12,10 @@ const Integrantes = () => {
             <div className="cardSection">
                 <p>Elegí un perfil para ver su tarjeta.</p>
                 <div className="flexContainer">
-                    <Card img={"src/assets/img/chikis.jpg"} nombre={"Erika"} frase={"Me gusta programar, aprender en equipo y disfrutar de mis cuatro perros."}/>
-                    <Card img={"src/assets/img/gonzalo-profile.jpg"} nombre={"Gonza"} frase={"Curioso por la tecnología, creativo y con ganas de seguir evolucionando como profesional."}/>
-                    <Card img={"src/assets/img/kity.jpeg"} nombre={"Mariano"} frase={"Apasionado por la tecnología y la innovación, con interés en proyectos de impacto real"}/>
-                    <Card img={"src/assets/img/carlina.png"} nombre={"Lean"} frase={"Desarrollador en crecimiento, siempre aprendiendo y compartiendo experiencias."}/>
+                    <Card img={ErikaImg} nombre={"Erika"} frase={"Me gusta programar, aprender en equipo y disfrutar de mis cuatro perros."}/>
+                    <Card img={GonzaImg} nombre={"Gonza"} frase={"Curioso por la tecnología, creativo y con ganas de seguir evolucionando como profesional."}/>
+                    <Card img={MarianoImg} nombre={"Mariano"} frase={"Apasionado por la tecnología y la innovación, con interés en proyectos de impacto real"}/>
+                    <Card img={LeanImg} nombre={"Lean"} frase={"Desarrollador en crecimiento, siempre aprendiendo y compartiendo experiencias."}/>
                 </div>
             </div>
         </section>

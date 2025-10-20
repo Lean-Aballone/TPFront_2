@@ -6,8 +6,8 @@ import Card from "../lean/Card";
 import habilidadesData from "../lean/habilidades.json"
 import Musica from "../lean/Musica";
 import Peliculas from "../lean/Peliculas";
+import Profile from "../assets/img/carlina.png";
 import "../lean/lean.css"
-
 import lp from "../lean/resources/songs/linkinpark.webm";
 import ghost from "../lean/resources/songs/ghost.webm";
 import coldplay from "../lean/resources/songs/coldplay.webm";
@@ -19,7 +19,7 @@ const Lean = () => {
             <div className="blur">
                 <div className="lean-container">
                     <section className="flex" style={{gap:"1rem"}}>
-                        <Img src={"src/assets/img/carlina.png"} alt={"Lean"}/>
+                        <Img src={Profile} alt={"Lean"}/>
                         <Info
                             nombre={"Leandro Ezequiel Aballone"}
                             ubicacion={"Ciudad Autónoma de Buenos Aires (CABA)"}
