@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react";
 import MovieCard from "../components/MovieCard.jsx";
 import Footer from "../components/Footer.jsx"
+import Data from "../seccionPeliculas/data.json"
 import "../seccionPeliculas/peliculas.css";
 
 export default function App() {
   const [peliculas, setPeliculas] = useState([]);
 
   useEffect(() => {
-    fetch("src/seccionPeliculas/data.json")
+    fetch(Data)
       .then((res) => res.json())
       .then((data) => setPeliculas(data))
       .catch((err) => console.error("Error al cargar JSON:", err));
