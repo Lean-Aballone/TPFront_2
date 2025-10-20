@@ -20,7 +20,7 @@ const Home = () => {
       <section className="home-updates">
         <div className="home-updates__header">
           <h2>Panel en vivo</h2>
-          <p>Un resumen rápido del clima actual y noticias destacadas del espacio.</p>
+          <p>Un resumen rápido del clima actual y titulares en español.</p>
         </div>
         <div className="home-updates__grid">
           <ClimaPreview />
