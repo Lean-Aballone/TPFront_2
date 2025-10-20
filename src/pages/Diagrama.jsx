@@ -35,14 +35,14 @@ const Diagrama = () => {
 │   ├── Article.jsx
 │   ├── bitacora.css
 │   └── reuniones.json
-├── Clima
-│   └── clima.css
 ├── components
+│   ├── ClimaPreview.jsx
 │   ├── Footer.jsx
 │   ├── Ifts.jsx
 │   ├── Img.jsx
 │   ├── MovieCard.jsx
 │   ├── Navbar.jsx
+│   ├── NoticiasPreview.jsx
 │   ├── Sidebar.jsx
 │   └── ToggleButton.jsx
 ├── erika
@@ -91,6 +91,7 @@ const Diagrama = () => {
 │   ├── Quote.jsx
 │   └── Skills.jsx
 ├── pages
+│   ├── apiSections.css
 │   ├── Bitacora.jsx
 │   ├── Clima.jsx
 │   ├── Diagrama.jsx
@@ -101,8 +102,9 @@ const Diagrama = () => {
 │   ├── Layout.jsx
 │   ├── Lean.jsx
 │   ├── Mariano.jsx
+│   ├── Noticias.jsx
 │   ├── Peliculas.jsx
-│   └── RenderDiagram.drawio.html
+│   ├── RenderDiagram.drawio.html
 ├── portada
 │   ├── Card.jsx
 │   ├── Integrantes.jsx
