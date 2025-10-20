@@ -8,6 +8,8 @@ import Mariano from './pages/Mariano';
 import Home from './pages/Home';
 import Peliculas from './pages/Peliculas.jsx';
 import Diagrama from './pages/Diagrama.jsx';
+import Clima from './pages/Clima.jsx';
+import Noticias from './pages/Noticias.jsx';
 import './App.css'
 
 function App() {
@@ -23,6 +25,8 @@ function App() {
           <Route path="/mariano" element={<Mariano />} />
           <Route path="/peliculas" element={<Peliculas />} />
           <Route path="/diagrama" element={<Diagrama />} />
+          <Route path="/clima" element={<Clima />} />
+          <Route path="/noticias" element={<Noticias />} />
           <Route path="*" element={<Home />} />
         </Route>
       </Routes>
